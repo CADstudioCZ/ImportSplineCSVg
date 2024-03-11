@@ -6,3 +6,5 @@ Unlike the standard Autodesk's sample script, this import respects alternative d
 It also creates the spline(s) in the active (not root) component and assumes millimeter units (keeps imported numbers 1:1, not 10x larger).
 
 See more at www.cadforum.cz
+
+![csv1](https://github.com/CADstudioCZ/ImportSplineCSVg/assets/46652150/2d350213-3abf-4cc1-bb17-d859eddff61f)
