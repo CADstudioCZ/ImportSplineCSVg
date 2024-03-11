@@ -12,7 +12,8 @@ def run(context):
         # Get all components in the active design.
         product = app.activeProduct
         design = adsk.fusion.Design.cast(product)
-        root = design.activeComponent # or design.rootComponent
+        root = design.activeComponent # or design.rootComponent - change as needed
+        unitcoeff = 0.1 # assumed [mm] = no 10x scaling
         title = 'Import Spline csv'
         if not design:
             ui.messageBox('No active Fusion design', title)
@@ -52,7 +53,7 @@ def run(context):
                     try:
                         if pntStr.find(",") >= 0 :
                             pntStr = pntStr.replace(",",".")
-                        data.append(float(pntStr))
+                        data.append(float(pntStr) * unitcoeff)
                     except:
                         break
                 if len(pntStrArr) == 2 :
