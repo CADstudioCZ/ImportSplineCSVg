@@ -1,0 +1,9 @@
+{
+	"autodeskProduct":	"Fusion360",
+	"type":	"script",
+	"author":	"Autodesk + ARKANCE",
+	"description":	{
+		"Import spline multiple, globalized, 2D":	""
+	},
+	"supportedOS":	"windows|mac"
+}
